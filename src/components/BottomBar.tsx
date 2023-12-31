@@ -29,7 +29,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
-const {width} = Dimensions.get('screen');
+const {width} = Dimensions.get('window');
 
 const TAB_WIDTH = width / 4;
 
@@ -40,7 +40,7 @@ const BottomBar: React.FC<BottomTabBarProps> = props => {
 
   const handleAnimate = (index: number) => {
     'worklet';
-    translateX.value = withTiming(TAB_WIDTH * index, {
+    translateX.value = withTiming(TAB_WIDTH * index - 7, {
       duration: 1000,
     });
   };
@@ -176,7 +176,7 @@ const BottomBar: React.FC<BottomTabBarProps> = props => {
       <Animated.View
         style={[
           {
-            width: 90,
+            width: TAB_WIDTH,
             height: 90,
             borderRadius: 100,
             backgroundColor: resources.colors.black1,
