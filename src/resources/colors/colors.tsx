@@ -1,0 +1,16 @@
+export default {
+  blue_dark: '#153075',
+  blue_secondary: '#2A4BA0',
+  yellow: '#F9B023',
+  yellow_light: '#FFC83A',
+  black100: '#1B262E',
+  black90: '#354349',
+  black60: '#606D76',
+  black45: '#A9B4BC',
+  black20: '#C5CDD2',
+  black10: '#E7ECF0',
+  black1: '#F8F9FB',
+  white: '#ffffff',
+  black: '#000000',
+  red: '#FF8181',
+};
